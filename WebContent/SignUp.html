@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.newStyle {
+background-color : green; 
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>New user Sign up page</title>
+
+<script>
+
+function passsValidation(){
+	
+	var password = document.forms["RegistrationForm"]["pass"];
+	
+	if(password.value = ""){
+		window.alert("please enter password");
+		password.focus();
+		return false;
+	}
+}
+
+</script>
+</head>
+<body class = newStyle>
+
+<form name = "RegistrationForm" onsubmit = "return passsValidation()" action = "signUp">
+<pre>
+First Name : <input type = "text" name = "firstName">    Last Name : <input type = "text" name = "lastName"><br/><br/>
+username   : <input type = "text" name = "userName">      Email     : <input type = "text" name = "email"><br/><br/>
+Birthday   : <input type = "date" name = "bday">       password  : <input type = "password" name = "pass"><br/><br/>
+Address  : <input type = "text" name = "address">
+
+<input type = "submit" value = "Submit Form">
+</pre>
+</form>
+
+</body>
+</html>
